@@ -1,0 +1,41 @@
+@mixin more-than-xxl {
+  @media (min-width: 1739px) {
+    @content;
+  }
+}
+
+@mixin more-than-xl {
+  @media (min-width: 1519px) {
+    @content;
+  }
+}
+
+@mixin more-than-lg {
+  @media (min-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin more-than-md {
+  @media (min-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin more-than-sm {
+  @media (min-width: 767px) {
+    @content;
+  }
+}
+
+@mixin more-than-xsm {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin more-than-xxs {
+  @media (min-width: 374px) {
+    @content;
+  }
+}
