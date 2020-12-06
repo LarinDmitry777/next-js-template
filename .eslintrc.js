@@ -68,5 +68,23 @@ module.exports = {
     'use-isnan': 'error',
     'no-useless-backreference': 'error',
     'no-unsafe-optional-chaining': 'error',
+    // best practice
+    'accessor-pairs': 'error',
+    'array-callback-return': 'error',
+    'block-scoped-var': 'error',
+    'class-methods-use-this': 'error',
+    complexity: ['error', { max: 3 }],
+    'consistent-return': 'off',
+    curly: 'error',
+    'default-case': 'off',
+    'default-case-last': 'error',
+    'default-param-last': 'error',
+    'dot-location': ['error', 'property'],
+    'dot-notation': 'error',
+    eqeqeq: 'error',
+    'grouped-accessor-pairs': 'error',
+    'guard-for-in': 'error',
+    // Stylistic Issues
+    'comma-dangle': ['error', 'always-multiline'],
   },
 };
