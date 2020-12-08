@@ -68,6 +68,7 @@ module.exports = {
     'use-isnan': 'error',
     'no-useless-backreference': 'error',
     'no-unsafe-optional-chaining': 'error',
+
     // best practice
     'accessor-pairs': 'error',
     'array-callback-return': 'error',
@@ -84,7 +85,29 @@ module.exports = {
     eqeqeq: 'error',
     'grouped-accessor-pairs': 'error',
     'guard-for-in': 'error',
+    'max-classes-per-file': ['error', 1],
+    'no-alert': 'error',
+    'no-caller': 'error',
+    'no-case-declarations': 'error',
+    'no-constructor-return': 'error',
+    'no-div-regex': 'error',
+    'no-else-return': 'error',
+    'no-empty-function': 'error',
+    'no-empty-pattern': 'error',
+    'no-eq-null': 'error',
+    'no-eval': 'error',
+    'no-extend-native': 'error',
+    'no-extra-bind': 'error',
+    'no-extra-label': 'error',
+    'no-fallthrough': 'error',
+    'no-floating-decimal': 'error',
+    'no-global-assign': 'error',
+    'no-invalid-this': 'error',
+    'no-iterator': 'error',
+
     // Stylistic Issues
     'comma-dangle': ['error', 'always-multiline'],
+
+
   },
 };
