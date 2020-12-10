@@ -144,9 +144,17 @@ module.exports = {
     'require-unicode-regexp': 'off', // IE can`t
     'vars-on-top': 'error',
     'wrap-iife': ['error', 'inside'],
-    'yoda': ['error', "never", { "exceptRange": true }],
+    yoda: ['error', 'never', { exceptRange: true }],
 
-
+    // Variables
+    'init-declarations': 'off',
+    'no-shadow': 'off',
+    'no-shadow-restricted-names': 'error',
+    'no-undef': 'error',
+    'no-undef-init': 'error',
+    'no-undefined': 'off',
+    'no-unused-vars': 'error',
+    'no-use-before-define': 'error',
 
     // Stylistic Issues
     'comma-dangle': ['error', 'always-multiline'],
