@@ -126,10 +126,29 @@ module.exports = {
     'no-sequences': 'error',
     'no-throw-literal': 'error',
     'no-unmodified-loop-condition': 'off',
+    'no-unused-expressions': 'off',
+    'no-unused-labels': 'error',
+    'no-useless-call': 'off',
+    'no-useless-catch': 'error',
+    'no-useless-concat': 'error',
+    'no-useless-escape': 'error',
+    'no-useless-return': 'error',
+    'no-void': 'error',
+    'no-warning-comments': ['warn', { terms: ['todo'] }], // so as not to forget to fix
+    'no-with': 'error',
+    'prefer-named-capture-group': 'off',
+    'prefer-promise-reject-errors': 'error',
+    'prefer-regex-literals': 'error',
+    radix: 'off',
+    'require-await': 'off',
+    'require-unicode-regexp': 'off', // IE can`t
+    'vars-on-top': 'error',
+    'wrap-iife': ['error', 'inside'],
+    'yoda': ['error', "never", { "exceptRange": true }],
+
+
 
     // Stylistic Issues
     'comma-dangle': ['error', 'always-multiline'],
-
-
   },
 };
