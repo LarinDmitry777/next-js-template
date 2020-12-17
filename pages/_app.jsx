@@ -1,10 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/index.scss';
+import { Provider } from 'react-redux';
+import makeStore from '../store';
+
+const store = makeStore();
 
 function MyApp({ Component, pageProps }) {
-  // eslint-disable-next-line react/jsx-props-no-spreading
-  return <Component {...pageProps} />;
+  return (
+    <Provider store={store}>
+      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+      <Component {...pageProps} />
+    </Provider>
+  );
 }
 
 MyApp.propTypes = {
