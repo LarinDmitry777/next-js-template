@@ -10,6 +10,11 @@
     "lint:style": "stylelint \"./**/*.{css,scss}\" --fix",
     "lint": "npm-run-all --parallel lint:js lint:style"
   },
+  "browserslist": [
+    ">0.3%",
+    "not ie 11",
+    "not dead"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "yarn lint"
