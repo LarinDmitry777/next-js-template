@@ -28,7 +28,8 @@ export default function ReduxPage() {
         <button type="button" onClick={handleClearBtn}>Удалить всё</button>
         <div>
           {items.map((item, idx) => (
-            <p>{idx}</p>
+            // eslint-disable-next-line react/no-array-index-key
+            <p key={idx}>{idx}</p>
           ))}
         </div>
       </Layout>
