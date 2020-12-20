@@ -1,19 +1,19 @@
 import React from 'react';
 import Head from 'next/head';
 import { useSelector, useDispatch } from 'react-redux';
-import exampleSlice from '../store/slices/exampleSlice';
 import Layout from '../components/Layout/Layout';
+import { addItem, clear } from '../store/slices/exampleSlice';
 
 export default function ReduxPage() {
   const dispatch = useDispatch();
   const items = useSelector((state) => state.example.items);
 
   const handleAddBtn = () => {
-    dispatch(exampleSlice.actions.addItem({ name: 'someItem' }));
+    dispatch(addItem({ name: 'someItem' }));
   };
 
   const handleClearBtn = () => {
-    dispatch(exampleSlice.actions.clear());
+    dispatch(clear());
   };
 
   return (

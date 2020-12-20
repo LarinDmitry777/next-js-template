@@ -4,7 +4,7 @@ import exampleSlice from './slices/exampleSlice';
 export default function makeStore() {
   return configureStore({
     reducer: combineReducers({
-      example: exampleSlice.reducer,
+      example: exampleSlice,
     }),
     devTools: true,
   });

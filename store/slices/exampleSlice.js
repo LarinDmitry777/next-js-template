@@ -15,4 +15,9 @@ const exampleSlice = createSlice({
   },
 });
 
-export default exampleSlice;
+export const {
+  addItem,
+  clear,
+} = exampleSlice.actions;
+
+export default exampleSlice.reducer;
