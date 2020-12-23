@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <Layout>
-        <h1>Сборка для next.js</h1>
+        <h1 className="col-xs-6 col-lg-4">Сборка для next.js</h1>
         <p>Ай диги дай</p>
         <Link href="/redux"> Пример работы с redux</Link>
       </Layout>

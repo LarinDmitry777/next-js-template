@@ -140,7 +140,7 @@
         "prefer-promise-reject-errors": "error",
         "prefer-regex-literals": "error",
         "radix": "off",
-        "require-await": "off",
+        "require-await": "error",
         "require-unicode-regexp": "off", // IE can`t
         "vars-on-top": "error",
         "wrap-iife": ["error", "inside"],
