@@ -6,7 +6,7 @@ import { addItem, clear } from '../store/slices/exampleSlice';
 
 export default function ReduxPage() {
   const dispatch = useDispatch();
-  const items = useSelector((state) => state.example.items);
+  const items: Array<{name: string}> = useSelector((state) => state.example.items);
 
   const handleAddBtn = () => {
     dispatch(addItem({ name: 'someItem' }));
@@ -27,7 +27,7 @@ export default function ReduxPage() {
         <button type="button" onClick={handleAddBtn}>Добавить Кусок</button>
         <button type="button" onClick={handleClearBtn}>Удалить всё</button>
         <div>
-          {items.map((item, idx) => (
+          {items.map((item, idx: number) => (
             // eslint-disable-next-line react/no-array-index-key
             <p key={idx}>{idx}</p>
           ))}

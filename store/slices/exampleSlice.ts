@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 const exampleSlice = createSlice({
   name: 'example',
@@ -6,7 +6,7 @@ const exampleSlice = createSlice({
     items: [],
   },
   reducers: {
-    addItem: (state, action) => {
+    addItem: (state, action: PayloadAction<never>) => {
       state.items.push(action.payload);
     },
     clear: (state) => {
