@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import '../styles/index.scss';
 import { Provider } from 'react-redux';
 import type { AppProps } from 'next/app';
@@ -15,11 +14,5 @@ function MyApp({ Component, pageProps }: AppProps) {
     </Provider>
   );
 }
-
-MyApp.propTypes = {
-  Component: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
-  // eslint-disable-next-line react/forbid-prop-types
-  pageProps: PropTypes.object.isRequired,
-};
 
 export default MyApp;
