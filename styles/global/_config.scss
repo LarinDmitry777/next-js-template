@@ -14,31 +14,31 @@ footer {
 }
 
 main {
-  z-index: 1;
   flex: 1 0 auto;
+  z-index: 1;
 }
 
 html {
-  width: 100%;
-  min-height: 100vh;
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  min-height: 100vh;
+  padding: 0;
+  width: 100%;
 }
 
 body {
-  position: relative;
   box-sizing: border-box;
   font-family: 'Roboto', Helvetica, Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-font-smoothiposition: relative;
+  position: relative;
 
   > .app {
-    position: relative;
     display: flex;
-    overflow: hidden;
-    min-height: 100vh;
     flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
   }
 }
 
