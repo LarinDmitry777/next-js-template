@@ -6,9 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint:js": "eslint \"./{pages,components, store}/**/*.{js,jsx,ts,tsx}\" --fix",
+    "lint:eslint": "eslint \"./{pages,components, store}/**/*.{js,jsx,ts,tsx}\" --fix",
+    "lint:ts": "tsc --pretty",
     "lint:style": "stylelint \"./**/*.{css,scss}\" --fix",
-    "lint": "npm-run-all --parallel lint:js lint:style"
+    "lint": "npm-run-all --parallel lint:eslint lint:style lint:ts"
   },
   "browserslist": [
     ">0.3%",

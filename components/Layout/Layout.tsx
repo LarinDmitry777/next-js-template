@@ -1,19 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './layout.module.scss';
 
-const Layout = ({ children }) => (
+export interface LayoutProps {
+  title?: string
+  children: React.ReactNode
+}
+
+const Layout = ({ children }: LayoutProps) => (
   <section className={styles.layout}>
     { children }
   </section>
 );
-
-Layout.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element),
-  ]),
-};
 
 Layout.defaultProps = {
   children: null,

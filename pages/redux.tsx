@@ -6,6 +6,7 @@ import { addItem, clear } from '../store/slices/exampleSlice';
 
 export default function ReduxPage() {
   const dispatch = useDispatch();
+  // @ts-ignore
   const items: Array<{name: string}> = useSelector((state) => state.example.items);
 
   const handleAddBtn = () => {

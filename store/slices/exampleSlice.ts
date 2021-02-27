@@ -1,12 +1,18 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
+interface SliceStateInterface {
+  items: Array<{ name: string }>
+}
+
+const initialState: SliceStateInterface = {
+  items: [],
+};
+
 const exampleSlice = createSlice({
   name: 'example',
-  initialState: {
-    items: [],
-  },
+  initialState,
   reducers: {
-    addItem: (state, action: PayloadAction<never>) => {
+    addItem: (state, action: PayloadAction<{ name: string }>) => {
       state.items.push(action.payload);
     },
     clear: (state) => {
