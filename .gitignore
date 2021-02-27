@@ -33,8 +33,5 @@ yarn-error.log*
 # vercel
 .vercel
 
-# npm (use yarn only)
-package-lock.json
-
 # idea
 .idea
