@@ -1,13 +1,13 @@
 import React from 'react';
 import Head from 'next/head';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import Layout from '../components/Layout/Layout';
 import { addItem, clear } from '../store/slices/exampleSlice';
+import { useAppDispatch, RootState } from '../store';
 
 export default function ReduxPage() {
-  const dispatch = useDispatch();
-  // @ts-ignore
-  const items: Array<{name: string}> = useSelector((state) => state.example.items);
+  const dispatch = useAppDispatch();
+  const items: Array<{name: string}> = useSelector((state: RootState) => state.example.items);
 
   const handleAddBtn = () => {
     dispatch(addItem({ name: 'someItem' }));

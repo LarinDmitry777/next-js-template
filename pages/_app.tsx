@@ -2,9 +2,7 @@ import React from 'react';
 import '../styles/index.scss';
 import { Provider } from 'react-redux';
 import type { AppProps } from 'next/app';
-import makeStore from '../store';
-
-const store = makeStore();
+import store from '../store';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
